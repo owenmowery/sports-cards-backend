@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player_name: MyString
+  player_team: MyString
+  league: MyString
+  position: MyString
+  card_value: MyString
+  card_img: MyString
+  admin: one
+
+two:
+  player_name: MyString
+  player_team: MyString
+  league: MyString
+  position: MyString
+  card_value: MyString
+  card_img: MyString
+  admin: two
