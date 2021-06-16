@@ -5,34 +5,80 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Admin.destroy_all
+Card.destroy_all
 
 Admin.create(
     name: "Owen Mowery",
     email: "owenmowery99@gmail.com",
-    password: "password"
+    password_digest: "password"
 )
 
-Card.create(
-    
-)
-create_table "admins", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.string "password_digest"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
+Card.create([{
+    player_name: "Chase Claypool",
+    player_team: "Pittsburgh Steelers",
+    league: "NFL",
+    position: "WR",
+    card_value: "$500",
+    card_img: "public/img/chase-claypool.jpg",
+    admin: Admin.all.sample
+},
+{
+    player_name: "Joe Burrow",
+    player_team: "Cinncinati Bengals",
+    league: "NFL",
+    position: "QB",
+    card_value: "$800",
+    card_img: "public/img/joe-burrow.jpg",
+    admin: Admin.all.sample
+},
+{
+    player_name: "Larry Bird",
+    player_team: "Boston Celtics",
+    league: "NBA",
+    position: "PF/SF",
+    card_value: "$400",
+    card_img: "public/img/larry-bird.jpg",
+    admin: Admin.all.sample
+},
+{
+    player_name: "LaMelo Ball",
+    player_team: "Charlotte Hornets",
+    league: "NBA",
+    position: "PG",
+    card_value: "$900",
+    card_img: "public/img/lamelo-ball.jpg",
+    admin: Admin.all.sample
+},
+{
+    player_name: "LaMelo Ball",
+    player_team: "Charlotte Hornets",
+    league: "NBA",
+    position: "PG",
+    card_value: "$600",
+    card_img: "public/img/lamelo-ball-2.jpg",
+    admin: Admin.all.sample
+},
+{
+    player_name: "Tua Tagovailoa",
+    player_team: "Miami Dolphins",
+    league: "NFL",
+    position: "QB",
+    card_value: "$1100",
+    card_img: "public/img/tua-tagovailoa.jpg",
+    admin: Admin.all.sample
+},
+{
+    player_name: "Aleksej Pokusevski",
+    player_team: "Oklahoma City Thunder",
+    league: "NBA",
+    position: "SF",
+    card_value: "$200",
+    card_img: "public/img/aleksej-pokusevski.jpg",
+    admin: Admin.all.sample
+}
+])
 
-  create_table "cards", force: :cascade do |t|
-    t.string "player_name"
-    t.string "player_team"
-    t.string "league"
-    t.string "position"
-    t.string "card_value"
-    t.string "card_img"
-    t.integer "admin_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["admin_id"], name: "index_cards_on_admin_id"
-  end
+puts "Completed"
+
 
