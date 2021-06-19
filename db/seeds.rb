@@ -20,7 +20,7 @@ Card.create([{
     league: "NFL",
     position: "WR",
     card_value: "$500",
-    card_img: "public/img/chase-claypool.jpg",
+    card_img: "/Users/owen/Development/code/Mod4/sports-card-js-project/sports-cards-backend/public/img/chase-claypool.jpg",
     admin: Admin.all.sample
 },
 {
@@ -29,7 +29,7 @@ Card.create([{
     league: "NFL",
     position: "QB",
     card_value: "$800",
-    card_img: "public/img/joe-burrow.jpg",
+    card_img: "/Users/owen/Development/code/Mod4/sports-card-js-project/sports-cards-backend/public/img/joe-burrow.jpg",
     admin: Admin.all.sample
 },
 {
@@ -38,7 +38,7 @@ Card.create([{
     league: "NBA",
     position: "PF/SF",
     card_value: "$400",
-    card_img: "public/img/larry-bird.jpg",
+    card_img: "/Users/owen/Development/code/Mod4/sports-card-js-project/sports-cards-backend/public/img/larry-bird.jpg",
     admin: Admin.all.sample
 },
 {
@@ -47,7 +47,7 @@ Card.create([{
     league: "NBA",
     position: "PG",
     card_value: "$900",
-    card_img: "public/img/lamelo-ball.jpg",
+    card_img: "/Users/owen/Development/code/Mod4/sports-card-js-project/sports-cards-backend/public/img/lamelo-ball.jpg",
     admin: Admin.all.sample
 },
 {
@@ -56,7 +56,7 @@ Card.create([{
     league: "NBA",
     position: "PG",
     card_value: "$600",
-    card_img: "public/img/lamelo-ball-2.jpg",
+    card_img: "/Users/owen/Development/code/Mod4/sports-card-js-project/sports-cards-backend/public/img/lamelo-ball-2.jpg",
     admin: Admin.all.sample
 },
 {
@@ -65,7 +65,7 @@ Card.create([{
     league: "NFL",
     position: "QB",
     card_value: "$1100",
-    card_img: "public/img/tua-tagovailoa.jpg",
+    card_img: "/Users/owen/Development/code/Mod4/sports-card-js-project/sports-cards-backend/public/img/tua-tagovailoa.jpg",
     admin: Admin.all.sample
 },
 {
@@ -74,7 +74,7 @@ Card.create([{
     league: "NBA",
     position: "SF",
     card_value: "$200",
-    card_img: "public/img/aleksej-pokusevski.jpg",
+    card_img: "/Users/owen/Development/code/Mod4/sports-card-js-project/sports-cards-backend/public/img/aleksej-pokusevski.jpg",
     admin: Admin.all.sample
 }
 ])
